@@ -1,12 +1,12 @@
-# revision 15878
+# revision 32261
 # category Package
 # catalog-ctan /macros/latex/contrib/ushort
-# catalog-date 2008-02-29 19:54:55 +0100
+# catalog-date 2012-04-09 09:24:18 +0200
 # catalog-license lppl
 # catalog-version 2.2
 Name:		texlive-ushort
 Version:	2.2
-Release:	2
+Release:	3
 Summary:	Shorter (and longer) underlines and underbars
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ushort
@@ -53,16 +53,3 @@ sizes and types.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.2-2
-+ Revision: 757331
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.2-1
-+ Revision: 719864
-- texlive-ushort
-- texlive-ushort
-- texlive-ushort
-
