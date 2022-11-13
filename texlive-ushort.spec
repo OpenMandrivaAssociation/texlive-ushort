@@ -1,19 +1,13 @@
-# revision 32261
-# category Package
-# catalog-ctan /macros/latex/contrib/ushort
-# catalog-date 2012-04-09 09:24:18 +0200
-# catalog-license lppl
-# catalog-version 2.2
 Name:		texlive-ushort
-Version:	2.2
-Release:	12
+Version:	32261
+Release:	1
 Summary:	Shorter (and longer) underlines and underbars
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ushort
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ provides a generic command for creating underlines of various
 sizes and types.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -46,7 +40,8 @@ sizes and types.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
