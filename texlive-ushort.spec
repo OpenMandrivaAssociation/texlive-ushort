@@ -1,6 +1,6 @@
 Name:		texlive-ushort
 Version:	32261
-Release:	1
+Release:	2
 Summary:	Shorter (and longer) underlines and underbars
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ushort
