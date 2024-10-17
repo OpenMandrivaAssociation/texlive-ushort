@@ -3,7 +3,7 @@ Version:	32261
 Release:	2
 Summary:	Shorter (and longer) underlines and underbars
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ushort
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ushort
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ushort.doc.r%{version}.tar.xz
